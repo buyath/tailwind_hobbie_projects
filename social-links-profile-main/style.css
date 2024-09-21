@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+}
+#main-container{
+    margin-top: 200px;
+}
+#second_cont{
+    background-color:  hsl(0, 0%, 8%);
+}
+#second_cont h6{
+    color:  hsl(75, 94%, 57%);
+}
+
+#second_cont div h4{
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+
+}
