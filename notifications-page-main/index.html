@@ -7,27 +7,68 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+  <button class="bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded" onclick="notify_change()">change</button>
+  <div class="flex justify-center align-center mt-10" id="container">
+    <div class="h-96 w-1/2 p-5 rounded-lg" id="main-container">
+      <div class="flex justify-between p-2 ">
+        <div class="flex justify-start">
+          <h1 class="font-bold text-2xl">Notifications</h1>
+          <h1 class="font-semibold text-2xl ml-4 bg-black text-white p-1 rounded-md py-0.5 " id="noti-alert">3</h1>
+        </div>
+        <div>
+          <p>Mark all as read</p>
+        </div>
+      </div>
+      <div class="flex justify-start p-2 bg-slate-50 rounded-md" id="cont1">
+        <div class="bg-slate-50">
+          <img src="../notifications-page-main/assets/images/avatar-mark-webber.webp" class="h-10 w-10" alt="">
+        </div>
+        <div class="ml-8">
+          <p class="bg-slate-50 ">Mark Webber reacted to your recent post My first tournament today 1m ago
+          </p>
+          <p class="bg-slate-50 ">1m ago</p>
+        </div>
+         
+      </div>
+      <div class="flex justify-start p-2 bg-slate-50 rounded- mt-2" id="cont1">
+        <div class="bg-slate-50">
+          <img src="../notifications-page-main/assets/images/avatar-angela-gray.webp" class="h-10 w-10" alt="">
+        </div>
+        <div class="bg-slate-50 ">
+          <p class="bg-slate-50 ml-8">  Angela Gray followed you
+          </p>
+          <p class="bg-slate-50 ml-8">5m ago</p>
+        </div>
+         
+      </div>
+      <div class="flex justify-start p-2 bg-slate-50 rounded- mt-2" id="cont1">
+        <div class="bg-slate-50">
+          <img src="../notifications-page-main/assets/images/avatar-rizky-hasanuddin.webp" class="h-10 w-10" alt="">
+        </div>
+        <div class="bg-slate-50 ml-8">
+          <p class="bg-slate-50 "> Jacob Thompson has joined your group Chess Club
+          </p>
+          <p class="bg-slate-50 ">1 day ago</p>
+        </div>
+         
+      </div>
+     
+  
+  
+    </div>
+  
 
-  Notifications 3
+  </div>
+  
 
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
 
   Rizky Hasanuddin sent you a private message
   5 days ago
@@ -43,9 +84,8 @@
   Anna Kim left the group Chess Club
   2 weeks ago
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="../notifications-page-main/scripts/main.js">
+
+  </script>
 </body>
 </html>
